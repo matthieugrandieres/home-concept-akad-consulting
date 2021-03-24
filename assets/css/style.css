@@ -1,0 +1,197 @@
+/** 
+Font Family : 
+- Fira Sans 
+- Title = Futura
+
+Color : 
+- Black 
+- White 
+- Or = #B7852F
+- Grey = #F0EDED
+- Grey Footer = #3B3B3B
+*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400&display=swap');
+
+body{
+    font-family: 'Fira Sans', sans-serif !important;
+    font-weight: 300 !important;
+}
+
+.btn-yellow{
+    background-color: #B7852F;
+    border-radius: 0px;
+    color: white;
+    box-shadow: 0px 10px 20px #B7852F;
+    font-weight: 200;
+}
+
+.btn-yellow:hover{
+    box-shadow: 0px 15px 30px #B7852F;
+    color: white;
+}
+
+
+/** --> Header **/
+header{
+    background-color: black;
+    color: white;
+    min-height: 100px;
+}
+
+header ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+} 
+
+@media (max-width: 991.98px) { 
+
+    header .logo-home{
+        display: flex;
+        justify-content: center;
+    
+    }
+    header ul{
+        justify-content: center;
+    }
+}
+
+header li{
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header li a{
+    color: white !important;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+header li a:hover{ 
+    color: #B7852F !important;
+}
+
+/** --> Navbar **/
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav li{
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+/** --> Background **/
+
+section.background-home{
+    background-image: url("../img/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+}
+
+section.background-home .container-fluid, .row{
+    height: 100%;
+}
+
+section.background-home .right-content{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.background-home .right-content p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+/** Carousel **/ 
+section.catalogue{
+    margin: 100px 0 100px 0;
+}
+
+section.catalogue h2{
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+section.catalogue li img{
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    
+}
+
+section.catalogue a{
+    text-decoration: none;
+    
+}
+
+section.catalogue button.btn-yellow{
+    display: block;
+    margin: 30px auto 60px auto;
+    font-size: 20px;
+}
+
+section.catalogue p.description{
+    text-align: center;
+    font-size: 18px;
+}
+
+/** Footer **/
+footer{
+    padding: 50px 0 50px 0;
+    background-color: #3B3B3B;
+    color: white;
+}
+
+footer h2, h3{
+    font-weight: 200;
+}
+
+footer h2{
+    text-align: center;
+}
+
+footer .row{
+    margin-bottom: 20px;
+}
+
+footer button.btn-yellow{
+    border-radius: 5px;
+    float: right;
+    margin-right: 20%;
+    font-weight: 400;
+}
+
+div.copyright{
+    text-align: center;
+    background-color: #3B3B3B;
+    color: white;
+}
+
+div.copyright p{
+    margin: 0;
+}
+
+
+
+
+
