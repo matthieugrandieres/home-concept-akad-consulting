@@ -1,7 +1,7 @@
 /** 
 Font Family : 
 - Fira Sans 
-- Title = Futura
+- Title = Cormorant
 
 Color : 
 - Black 
@@ -109,6 +109,10 @@ nav li{
     display: flex;
     align-items: center;
     margin: 0 10px 0 10px;
+}
+
+.nav-link.active{
+    font-weight: 400 !important;
 }
 
 /** --> Background **/
@@ -268,6 +272,56 @@ section.catalogue-gallery h4{
         visibility: visible;
     }
 }
+/** Pagination **/
+nav.pagination{
+    background-color: #F0EDED !important;
+    float: right;
+    margin-top: 40px;
+}
+
+nav.pagination li.active a{
+    background-color: #B7852F !important;
+    border: none;
+}
+
+nav.pagination li a{
+    color: #B7852F;
+}
+
+nav.pagination li a:hover{
+    background-color: #B7852F;
+    color: white;
+}
+
+/** --> CONFIGURATEUR <-- **/
+section.configurateur-head, section.configurateur{
+    background-color: #F0EDED;
+    padding: 50px 0 50px 0;
+}
+/** Head **/
+section.configurateur-head{
+    padding-top: 50px;
+}
+
+section.configurateur-head h2{
+    font-family: 'Cormorant Unicase', serif;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+section.configurateur-head p{
+    text-align: center;
+}
+/** Configurateur **/
+
+section.configurateur .container{
+    background-color: white;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
